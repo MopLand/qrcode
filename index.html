@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+	<meta charset="utf-8">
+	<title>QRCODE</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Expires" content="0">
+	<script type="text/javascript" src="res/qrcode.js"></script>
+</head>
+
+<body>
+	
+	<div class="container" id="app"></div>
+
+	<script>
+		QRCode.create( {
+			'thumb' : 'http://gd3.alicdn.com/imgextra/i1/2049501344/TB2ReZHb1uSBuNjSsplXXbe8pXa_!!2049501344.jpg_400x400.jpg',
+			'qrcode' : location.href,
+			'title' : '夏季男士长裤子修身小脚裤运动裤韩版卫裤束脚休闲裤薄款哈伦裤潮',
+			'price' : '6.90',
+			'coupon' : '3'
+		}, function( data ){
+
+			//生成图片
+			var img = document.createElement('img');
+				img.src = data;
+
+			document.querySelector('#app').appendChild( img );
+
+		} );
+	</script>
+
+</body>
+</html>
