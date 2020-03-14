@@ -74,7 +74,7 @@ var QRCode = {
 	//画二维码
 	qrcode : function(){
 
-		var url = 'http://yqt.so/qrcode?text=' + encodeURIComponent( QRCode.options.qrcode );
+		var url = 'http://url.taokebaohe.com/qrcode?text=' + encodeURIComponent( QRCode.options.qrcode );
 
 		//打印头像
 		var img = new Image();
